@@ -11,16 +11,13 @@ const Counter = ({
   const { count, increment, decrement, reset, isEven } = UseCounter({
     minValue,
     maxValue,
-    initialCount,
-    step,
-    stepUp,
-    stepDown,
+    initialCount,    
   });
   return (
     <>
       <h1>Counter</h1>
       <p>{count}</p>
-      {isEven() ? <p>Number is even</p> : <p>Number is uneven</p>}
+      {isEven() ? <p>Number is even</p> : <p>Number is uneven</p>}      
       <button onClick={() => increment(step)}>+</button>
       <button onClick={() => decrement(step)}>-</button>
       <button onClick={reset}>Reset</button>
