@@ -1,12 +1,11 @@
 .darkmode-wrap {
     display: flex;
-    gap: 1rem;
+    gap: .5rem;
     align-items: center;
 
     button {
         background: none;
-        color: rgb(54, 52, 52);
-        padding: .3em .5em;
+        color: rgb(54, 52, 52);        
         height: max-content;
         border-radius: .5rem;        
         border: none;
