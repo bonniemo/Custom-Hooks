@@ -12,9 +12,8 @@ const SWPerson = ({ url }:{url: string}) => {
     if(error) return <p>Error: {error}</p>
 
     if(data)        
-  return (
-    <>
-       <h1>{data?.name}</h1> 
+  return (    <>
+       <h1>{data.name}</h1> 
        <p>Height: {data.height}</p>
        <p>Skin color: {data.skin_color}</p>
        <p>Birth year: {data.birth_year}</p>

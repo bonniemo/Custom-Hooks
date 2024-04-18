@@ -1,0 +1,12 @@
+body {
+    transition: all 500ms;
+}
+
+.darkMode {
+    background-color: rgb(54, 52, 52);
+
+    color: whitesmoke;
+    .dark-mode-icon {
+        color: whitesmoke;       
+    }
+}

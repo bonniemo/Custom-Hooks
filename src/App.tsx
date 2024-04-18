@@ -1,13 +1,17 @@
 import Button from "./Components/Button";
 import Counter from "./Components/Counter";
 import SWPerson from "./Components/SWPerson";
-import ToggleBtn from "./Components/ToggleBtn";
+import ToggleBtn from "./Components/Toggle/ToggleBtn";
 
 const App = () => {
   return (
     <>
-      <SWPerson url = {'https://swapi.py4e.com/api/people/4/'}/>
-      <SWPerson url = {'https://swapi.py4e.com/api/people/1/'}/>
+      <section className="darkmode-wrap">
+        <h2>Dark Mode</h2>
+        <ToggleBtn />
+      </section>
+      <SWPerson url={"https://swapi.py4e.com/api/people/4/"} />
+      <SWPerson url={"https://swapi.py4e.com/api/people/1/"} />
       <Button onClick={() => console.log("clicked")}>Log In</Button>
       <Counter
         initialCount={5}
@@ -33,7 +37,6 @@ const App = () => {
         stepUp={40}
         stepDown={30}
       />
-      <ToggleBtn />
     </>
   );
 };
