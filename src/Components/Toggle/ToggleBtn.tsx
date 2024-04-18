@@ -9,7 +9,7 @@ const ToggleBtn = () => {
   toggle ? body?.classList.add("darkMode") : body?.classList.remove("darkMode")
   return (
     <>
-      <h2>{toggle ? 'Light Mode' : 'Dark Mode'}</h2>
+      <h2>Dark Mode</h2>
       <button onClick={toggleState}>
         {toggle ? <FaToggleOn className="dark-mode-icon" /> : <FaToggleOff className="dark-mode-icon"/>}
       </button>
