@@ -8,7 +8,6 @@ const App = () => {
     <>
       <section className="darkmode-wrap">
         <ToggleBtn />
-        <h2>Dark Mode</h2>
       </section>
       <SWPerson url={"https://swapi.py4e.com/api/people/4/"} />
       <SWPerson url={"https://swapi.py4e.com/api/people/1/"} />
